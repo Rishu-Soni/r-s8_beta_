@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" role="stylesheet">
+    <link rel="stylesheet" type="text/css" href="R's_css.css">
+    <title>Information</title>
+
+</head>
+<body> 
+<centre>
+
+    <div class="login-div">
+        <div class="logo-div"></div>
+        <div class="logo"><object data="photo_2022-11-17_13-28-34_adobe_express.svg" width="100" height="100" ></object></div>
+        <div class="title">Let me know about you</div>
+        <div class="sub-title">Designed By RISHU..</div>
+        <div class="fields">
+
+            <form action="main.html">
+                <div class="name">
+                    <input type="text" id="name" name="user-name" placeholder="Name"/>
+                </div>
+                <div class="age">
+                    <input type="number" id = "age" name="user-age" placeholder="Age"/>
+                </div>
+
+                <div class="save">
+                    <input type="button" value="Save" onclick="passvalues()">
+                </div>
+
+                <div class="sub">
+                    <input type="submit" value="Submit">
+                </div>
+
+               <script>
+            
+                    function passvalues()
+                {
+                    event.preventDefault();
+                    var name = document.getElementById("name").value;
+                    var age = document.getElementById("age").value;
+                    localStorage.setItem('is_name',name);
+                    localStorage.setItem('is_age',age);
+                    return false;
+                }
+            
+                </script>
+
+            <!-- <script>
+                $(document).ready(function() {
+                    $(".sub").click(function() {
+                    
+                        event.preventDefault();
+                    var name = document.getElementById("name").value;
+                    var age = document.getElementById("age").value;
+                    localStorage.setItem('is_name',name);
+                    localStorage.setItem('is_age',age);
+                    return false;
+                  
+                    });
+                });
+            </script> -->
+
+               </div>
+            </form>
+
+        </div>
+    </div>
+    
+<centre>
+</body>
+</html>
