@@ -1,75 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" role="stylesheet">
-    <link rel="stylesheet" type="text/css" href="R's_css.css">
-    <title>Information</title>
-
+    <meta name="main" content="My all projects">
+    <title>R's_8</title>
+    <link rel="stylesheet" href="css\header.css">
+    <link rel="stylesheet" href="css/index_main.css">
+    <link rel="icon" type="image/png" href="img/favicon_real.png">
 </head>
-<body> 
-<centre>
 
-    <div class="login-div">
-        <div class="logo-div"></div>
-        <div class="logo"><object data="photo_2022-11-17_13-28-34_adobe_express.svg" width="100" height="100" ></object></div>
-        <div class="title">Let me know about you</div>
-        <div class="sub-title">Designed By RISHU..</div>
-        <div class="fields">
+<body>
 
-            <form action="main.html">
-                <div class="name">
-                    <input type="text" id="name" name="user-name" placeholder="Name"/>
-                </div>
-                <div class="age">
-                    <input type="number" id = "age" name="user-age" placeholder="Age"/>
-                </div>
+    <!-- Finall header model with sticky navigation bar -->
 
-                <div class="save">
-                    <input type="button" value="Save" onclick="passvalues()">
-                </div>
+    <header>
+        <div>
+            <nav class="navbar">
+                <span class="logo-container">
+                    <a href="/img/R_s_8_png.png" target="_blank"><img class="logo" src="/img/R_s_8_png.png"
+                            alt="R's_logo">
+                    </a>
+                </span>
 
-                <div class="sub">
-                    <input type="submit" value="Submit">
-                </div>
-
-               <script>
-            
-                    function passvalues()
-                {
-                    event.preventDefault();
-                    var name = document.getElementById("name").value;
-                    var age = document.getElementById("age").value;
-                    localStorage.setItem('is_name',name);
-                    localStorage.setItem('is_age',age);
-                    return false;
-                }
-            
-                </script>
-
-            <!-- <script>
-                $(document).ready(function() {
-                    $(".sub").click(function() {
-                    
-                        event.preventDefault();
-                    var name = document.getElementById("name").value;
-                    var age = document.getElementById("age").value;
-                    localStorage.setItem('is_name',name);
-                    localStorage.setItem('is_age',age);
-                    return false;
-                  
-                    });
-                });
-            </script> -->
-
-               </div>
-            </form>
-
+                <a class="name-container text" href="index.html">
+                    <section>
+                        <p>R's_8</p>
+                    </section>
+                </a>
+                <span class="nav-span">
+                    <ul class="nav-container">
+                        <li><a id="home" href="index.html">Home</a></li>
+                        <li><a id="home" href="about.html">About</a></li>
+                        <li><a id="home" href="contact.html">Contact</a></li>
+                    </ul>
+                </span>
+            </nav>
         </div>
-    </div>
-    
-<centre>
+    </header>
+
+    <!-- it ends here -->
+
+    <main class="main" style="min-height: 85vh;">
+        <section class="heading-container text">
+            <h1>All my WEB PROJECTS</h1>
+        </section>
+
+
+        <!-- project of CAKE -->
+
+        <section class="section">
+            <div class="project-container">
+                <div class="text projects-heading">
+                    <h2>To wish BIRTHDAY</h2>
+                </div>
+
+                <div class="project-detail">
+                    <p class="text projects-text">
+                        Imagine a birthday cake–themed webpage! I dove into CSS animations, layout structures, and
+                        accessibility to bring icing textures and candle flickers to life. Using tutorials, I applied
+                        pseudo-elements, custom properties, and keyframes to guarantee smooth performance across
+                        browsers. As my birthday neared, I introduced vibrant color palettes, refined hover effects, and
+                        responsive media queries so it looks great on any device. Through iterative testing and code
+                        reviews, I addressed rendering glitches and accessibility barriers. The result? A seamless,
+                        delightful experience that blends festive design with solid web development practices—ready for
+                        you to explore and enjoy!
+                    </p>
+                </div>
+            </div>
+            <div class="icon-container">
+
+                <img class="icon" src="img/vector-cake-icon.jpg" alt="icon of diya">
+
+                <a href="cake.html"><button class="button" type="button">Here</button>
+
+                </a>
+            </div>
+        </section>
+
+        <hr>
+        <!-- project of diwali -->
+
+        <section class="inverse section">
+            <div class="project-container inverse">
+                <div class="text inverse projects-heading">
+                    <h2>For DIWALI</h2>
+                </div>
+
+                <div class="inverse project-detail">
+                    <p class="text projects-text">
+                        Imagine this: as the main page slows to a crawl, my internet access dwindles and project
+                        deadlines loom😎. This is the second most atrocious webpage I’ve ever edited—one I battled for
+                        months, almost tossing in the towel😔. But here’s the twist: after countless late nights and
+                        fierce determination, it’s finally live😊! I tweaked, tested, and reworked every line until it
+                        felt right. You might notice quirks and rough edges—that’s part of its charm and the story
+                        behind its creation. Dive in, explore its imperfections, and join me in celebrating persistence
+                        over perfection! Feedback is welcome as I keep steadily improving. </p>
+                </div>
+            </div>
+            <div class="icon-container">
+
+                <img class="icon" src="img/diya-clip-art-for-diwali.jpg" alt="icon of diya">
+
+                <a href="diwali.html"><button class="button" type="button">Here</button>
+
+                </a>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- project of FORM -->
+
+        <section class="section">
+            <div class="project-container">
+                <div class="text projects-heading">
+                    <h2 class="change">functionable FORM</h2>
+                </div>
+
+                <div class="project-detail">
+                    <p class="text projects-text">
+                        I just cooked up a nifty little form to collect info like Name and Age—my latest side project,
+                        built purely for fun 😏. There’s no hidden agenda or extra fields; it’s as straightforward as it
+                        gets. You simply pop in your details, hit submit, and voilà! I threw this together on a whim,
+                        tweaking fields and buttons until it felt just right. I hope you enjoy playing around with it as
+                        much as I enjoyed building it 😊. Feel free to test it out and share any thoughts!
+                    </p>
+                </div>
+            </div>
+            <div class="icon-container">
+
+                <img class="icon-form" src="img/toppng.com-list-view-icon-list-icon-1213x1577.png" alt="icon of form">
+
+                <a href="form.html"><button class="button" type="button">Here</button>
+
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
